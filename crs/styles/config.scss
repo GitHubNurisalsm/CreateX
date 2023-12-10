@@ -1,0 +1,41 @@
+.config{
+    margin: 179px 96px;
+    &__row{
+        width: 50%;
+        &-left{
+            width: 100%;
+        }
+        &-suptitle{
+            color: var(--gray-900, #1E212C);
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        &-title{
+            color: var(--gray-900, #1E212C);
+            font-size: 46px;
+            font-weight: 900;
+        }
+        &-desc{
+            padding-top: 48px;
+            color: var(--gray-800, #424551);
+            font-weight: 400;
+            line-height: 160%;
+        }
+        &-logo{
+            width: 100%;
+            padding-top: 20px;
+            display: flex;
+            column-gap: 40px;
+        }
+    }
+    &__img{
+        position: relative;
+        &-post{
+            position: absolute;
+            top: -70%;
+            left: 40%;
+            transform: translate(30%, -40%);
+        }
+    }
+}

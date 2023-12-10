@@ -552,12 +552,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px;
   border-radius: 4px;
   background: var(--white, #FFF);
   padding: 32px 40px;
@@ -628,4 +628,82 @@
   letter-spacing: 0.5px;
   color: #FF3F3A;
   cursor: pointer;
+}
+.events__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+}
+.events__bottom-title {
+  color: var(--gray-900, #1E212C);
+  font-size: 28px;
+  font-weight: 700;
+}
+.events__bottom-btn {
+  padding: 13px 40px;
+  border-radius: 4px;
+  background: var(--btn-gradient, linear-gradient(56deg, #FF3F3A 0%, #F75E05 100%));
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border: none;
+  cursor: pointer;
+}
+
+.config {
+  margin: 179px 96px;
+}
+.config__row {
+  width: 50%;
+}
+.config__row-left {
+  width: 100%;
+}
+.config__row-suptitle {
+  color: var(--gray-900, #1E212C);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.config__row-title {
+  color: var(--gray-900, #1E212C);
+  font-size: 46px;
+  font-weight: 900;
+}
+.config__row-desc {
+  padding-top: 48px;
+  color: var(--gray-800, #424551);
+  font-weight: 400;
+  line-height: 160%;
+}
+.config__row-logo {
+  width: 100%;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+}
+.config__img {
+  position: relative;
+}
+.config__img-post {
+  position: absolute;
+  top: -70%;
+  left: 40%;
+  -webkit-transform: translate(30%, -40%);
+          transform: translate(30%, -40%);
 }
