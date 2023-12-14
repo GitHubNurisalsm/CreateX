@@ -1,3 +1,4 @@
+
 var swiper = new Swiper(".team__swiper", {
     slidesPerView: 4,
     spaceBetween: 30,
@@ -20,3 +21,17 @@ var swiper = new Swiper(".team__swiper", {
     });
     
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    let header = document.querySelector(".header")
+    window.addEventListener("scroll", function() {
+        let scrollPosition = window.scrollY
+        if(scrollPosition > 900){
+            header.style.background = "white"
+        }
+        else{
+            header.style.background = "#ffdad5"
+        }
+    })
+})
+

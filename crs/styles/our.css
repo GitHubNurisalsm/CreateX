@@ -1,0 +1,105 @@
+.our {
+  padding: 80px 120px;
+}
+.our__subtitle {
+  color: var(--gray-900, #1E212C);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.our__title {
+  color: var(--gray-900, #1E212C);
+  font-size: 46px;
+  font-weight: 900;
+  text-align: center;
+  margin: 8px 0 60px;
+}
+.our__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+.our__categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+}
+.our__categories-item {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid var(--primary, transparent);
+  color: var(--gray-600, #9A9CA5);
+  font-weight: 700;
+}
+.our__categories-item:hover {
+  border-radius: 4px;
+  color: #ff3f3a;
+  border: 1px solid var(--primary, #FF3F3A);
+}
+.our__categories-item:hover sup {
+  color: #ff3f3a;
+}
+.our__lable {
+  position: relative;
+}
+.our__lable::before {
+  content: url("../search.svg");
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 16px;
+}
+.our__search {
+  width: 315px;
+  padding: 11px 16px 12px 16px;
+  border-radius: 4px;
+  border: 1px solid var(--gray-400, #D7DADD);
+  background: var(--white, #FFF);
+}
+.our__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.our__row .featured__card {
+  width: calc(33.33333% - 20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.our__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+  color: var(--gray-800, #424551);
+  border: none;
+  margin: 0 auto;
+  margin-top: 80px;
+  background: transparent;
+  font-weight: 700;
+}
