@@ -3,6 +3,7 @@
    padding: 20px 0;
    position: fixed;
    width: 100%;
+   z-index: 30;
    &__nav{
     display: flex;
     align-items: center;
@@ -130,20 +131,27 @@
         padding: 20px 0;
         left: 0;
         border-radius: 0 0 20px 20px;
+        transform: translateY(-100%);
         &.active{
             top: 0;
-            transform: translateY(-100%);
+            transform: translateY(0);
         }
     }
     .header__burger{
         display: flex;
     }
-    @media (max-width:768px){
+}
+
+
+@media (max-width:768px){
     .header__burgerMenu{
         flex-direction: column;
         row-gap: 20px;
         }
     }
+
+ 
+
     @media (max-width:500){
         .header__burgerMenu-links{
             a{
@@ -158,4 +166,3 @@
             text-align: center;
         }
     }
-}

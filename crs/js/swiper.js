@@ -24,7 +24,18 @@ var swiper2 = new Swiper(".team__swiper", {
     autoplay: {
         delay: 2000
     },
-    loop: true
+    loop: true,
+    breakpoints: {
+        886: {
+            slidesPerView: 3,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        676: {
+            slidesPerView: 1,
+        }
+    }
 });
 let burger = document.querySelector('.header__burger')
 let burgerMenu = document.querySelector('.header__burgerMenu')
