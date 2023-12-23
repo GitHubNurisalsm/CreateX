@@ -26,15 +26,30 @@ var swiper2 = new Swiper(".team__swiper", {
     },
     loop: true,
     breakpoints: {
+        992: {
+            slidesPerView: 4,
+        },
         886: {
             slidesPerView: 3,
         },
         768: {
-            slidesPerView: 2,
+            slidesPerView: 3,
         },
         676: {
+            slidesPerView: 2,
+        },
+        500: {
+            slidesPerView: 2,
+        },
+        425: {
             slidesPerView: 1,
-        }
+        },
+        375: {
+            slidesPerView: 1,
+        },
+        320: {
+            slidesPerView: 1,
+        },
     }
 });
 let burger = document.querySelector('.header__burger')

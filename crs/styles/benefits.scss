@@ -15,12 +15,10 @@
       text-transform: uppercase;
     }
     &__list {
-      width: 50%;
       display: flex;
       justify-content: space-between;
       margin-bottom: 60px;
       &-item {
-        width: 100%;
         span path {
           fill: #9A9CA5;
         }
